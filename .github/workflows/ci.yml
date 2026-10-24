@@ -16,7 +16,7 @@ jobs:
       - name: run tests
         run: npm test
   permissions:
-  contents: read
+    contents: read
   deploy-check:
     needs: test
     runs-on: ubuntu-latest
