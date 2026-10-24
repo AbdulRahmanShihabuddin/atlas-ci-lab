@@ -19,8 +19,8 @@ jobs:
   deploy-check:
     needs: test
     runs-on: ubuntu-latest
+    permissions: read
     steps:
-      - permissions: read
       - name: Deploy
         run: echo "Deploying with token $APP_TOKEN"
         env:
